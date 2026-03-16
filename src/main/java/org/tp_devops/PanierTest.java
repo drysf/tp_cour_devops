@@ -1,7 +1,9 @@
-package org.fintrack;
+package org.tp_devops;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+
+
 class PanierTest {
     @Test
     void ajouterArticleDeitAugmenterLeNombreDeArticles() {
@@ -16,33 +18,25 @@ class PanierTest {
 
     @Test
     void calculerTotalDoitRetournerLaSommeDessousTotaux() {
-        // Arranger
         Panier panier = new Panier();
         Article article1 = new Article("REF-001", "Stylo bleu", 1.50);
         Article article2 = new Article("REF-002", "Stylo rouge", 1.50);
-        // Agir
         panier.ajouterArticle(article1, 3);
         panier.ajouterArticle(article2, 3);
-        // Affirmer
         assertEquals(9.00, panier.calculerTotal());
     }
 
     @Test
     void panierVideDoitRetournerEstVideEgalTrue() {
-        // Arranger
         Panier panier = new Panier();
-        // Affirmer
         assertTrue(panier.estVide());
     }
 
     @Test
     void panierAvecArticlesNeDoitPasEtreVide() {
-        // Arranger
         Panier panier = new Panier();
         Article article = new Article("REF-001", "Stylo bleu", 1.50);
-        // Agir
         panier.ajouterArticle(article, 1);
-        // Affirmer
         assertFalse(panier.estVide());
     }
 }

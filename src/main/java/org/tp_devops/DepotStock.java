@@ -1,4 +1,4 @@
-package org.fintrack;
+package org.tp_devops;
 
 // Interface du dépôt de stock (à implémenter en test)
 public interface DepotStock {

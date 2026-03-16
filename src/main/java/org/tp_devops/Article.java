@@ -1,4 +1,4 @@
-package org.fintrack;
+package org.tp_devops;
 
 public class Article {
 

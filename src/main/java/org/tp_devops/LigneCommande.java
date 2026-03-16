@@ -1,4 +1,4 @@
-package org.fintrack;
+package org.tp_devops;
 
 public record LigneCommande(Article article, int quantite) {
     public LigneCommande {
