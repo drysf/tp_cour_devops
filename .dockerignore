@@ -1,0 +1,14 @@
+# Fichiers exclus du contexte Docker (allège le build et protège les secrets)
+target/
+.git/
+.gitignore
+.idea/
+*.iml
+*.iws
+*.ipr
+.mvn/
+.env
+.env.*
+*.md
+.github/
+.vscode/
